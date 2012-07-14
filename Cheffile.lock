@@ -1,0 +1,64 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.4.4)
+    bluepill (1.0.6)
+    build-essential (1.1.0)
+    dmg (1.0.0)
+    git (1.0.0)
+      dmg (>= 0.0.0)
+      runit (>= 0.0.0)
+      yum (>= 0.0.0)
+    imagemagick (0.2.2)
+    java (1.5.2)
+    nginx (0.101.6)
+      bluepill (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (~> 1.0.2)
+      runit (>= 0.0.0)
+      yum (>= 0.0.0)
+    ohai (1.0.2)
+    runit (0.15.0)
+    yum (0.6.2)
+
+GIT
+  remote: https://github.com/fnichol/chef-rbenv
+  ref: master
+  sha: c4dbcc85e3d6dae0eb8c9dc507d5ee915b7ad480
+  specs:
+    rbenv (0.6.11)
+
+GIT
+  remote: https://github.com/fnichol/chef-ruby_build
+  ref: master
+  sha: c38d86966694b85db291625b245722208b40b61e
+  specs:
+    ruby_build (0.6.3)
+
+GIT
+  remote: https://github.com/jondot/chef-nodejs-support
+  ref: master
+  sha: a72a5f27a1130468d22c7aaf3487c77576e4844e
+  specs:
+    nodejs-support (0.1.0)
+      nodejs (>= 0.0.0)
+
+GIT
+  remote: https://github.com/mdxp/nodejs-cookbook
+  ref: master
+  sha: 9f3426670af1debb1bcc4aea6f5a2bb8932a5595
+  specs:
+    nodejs (1.0.0)
+      build-essential (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  git (>= 0)
+  imagemagick (>= 0)
+  java (>= 0)
+  nginx (>= 0)
+  nodejs (>= 0)
+  nodejs-support (>= 0)
+  rbenv (>= 0)
+  ruby_build (>= 0)
+

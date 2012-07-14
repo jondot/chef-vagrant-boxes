@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'git'
+cookbook 'imagemagick'
+cookbook 'java'
+cookbook 'ruby_build', :git => 'https://github.com/fnichol/chef-ruby_build'
+cookbook 'rbenv', :git => 'https://github.com/fnichol/chef-rbenv'
+cookbook 'nodejs', :git => 'https://github.com/mdxp/nodejs-cookbook'
+cookbook 'nodejs-support', :git => 'https://github.com/jondot/chef-nodejs-support'
+cookbook 'nginx'
+
+
+
+
+# cookbook 'chef-client'
+# cookbook 'apache2', '>= 1.0.0'
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
