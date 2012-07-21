@@ -5,14 +5,24 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
 cookbook 'git'
+
+puts "NOTE: python cookbook has a recent bug. see\n   https://github.com/opscode-cookbooks/python/pull/16/files\nand fix locally if python craps out."
+cookbook 'python'
 cookbook 'imagemagick'
+
+# ruby stack
 cookbook 'java'
 cookbook 'ruby_build', :git => 'https://github.com/fnichol/chef-ruby_build'
 cookbook 'rbenv', :git => 'https://github.com/fnichol/chef-rbenv'
+
+# nodejs stack
 cookbook 'nodejs', :git => 'https://github.com/mdxp/nodejs-cookbook'
 cookbook 'nodejs-support', :git => 'https://github.com/jondot/chef-nodejs-support'
 cookbook 'nginx'
 
+# statsd stack
+cookbook 'graphite', :git => 'https://github.com/jondot/graphite'
+cookbook 'statsd', :git => 'https://github.com/hectcastro/chef-statsd'
 
 
 

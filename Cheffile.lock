@@ -1,6 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
+    apache2 (1.1.12)
     apt (1.4.4)
     bluepill (1.0.6)
     build-essential (1.1.0)
@@ -11,6 +12,7 @@ SITE
       yum (>= 0.0.0)
     imagemagick (0.2.2)
     java (1.5.2)
+    logrotate (0.8.2)
     nginx (0.101.6)
       bluepill (>= 0.0.0)
       build-essential (>= 0.0.0)
@@ -18,6 +20,8 @@ SITE
       runit (>= 0.0.0)
       yum (>= 0.0.0)
     ohai (1.0.2)
+    python (1.0.6)
+      build-essential (>= 0.0.0)
     runit (0.15.0)
     yum (0.6.2)
 
@@ -36,12 +40,31 @@ GIT
     ruby_build (0.6.3)
 
 GIT
+  remote: https://github.com/hectcastro/chef-statsd
+  ref: master
+  sha: 994bb1ff0ae1cb9a17535a15a628e498ba1553ee
+  specs:
+    statsd (0.0.4)
+      git (>= 0.0.0)
+      logrotate (>= 0.0.0)
+      nodejs (>= 0.0.0)
+
+GIT
   remote: https://github.com/jondot/chef-nodejs-support
   ref: master
   sha: a72a5f27a1130468d22c7aaf3487c77576e4844e
   specs:
     nodejs-support (0.1.0)
       nodejs (>= 0.0.0)
+
+GIT
+  remote: https://github.com/jondot/graphite
+  ref: master
+  sha: 0791f1a992c34b95ae33eacbdd0a1919f5c2a86c
+  specs:
+    graphite (0.3.3)
+      apache2 (>= 0.0.0)
+      python (>= 0.0.0)
 
 GIT
   remote: https://github.com/mdxp/nodejs-cookbook
@@ -54,11 +77,14 @@ GIT
 DEPENDENCIES
   apt (>= 0)
   git (>= 0)
+  graphite (>= 0)
   imagemagick (>= 0)
   java (>= 0)
   nginx (>= 0)
   nodejs (>= 0)
   nodejs-support (>= 0)
+  python (>= 0)
   rbenv (>= 0)
   ruby_build (>= 0)
+  statsd (>= 0)
 
