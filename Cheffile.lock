@@ -26,6 +26,13 @@ SITE
     yum (0.6.2)
 
 GIT
+  remote: https://github.com/ctrabold/chef-redis
+  ref: master
+  sha: 9d666da8c00d9d25a5f2b099d1b8137964151111
+  specs:
+    redis (0.0.3)
+
+GIT
   remote: https://github.com/fnichol/chef-rbenv
   ref: master
   sha: c4dbcc85e3d6dae0eb8c9dc507d5ee915b7ad480
@@ -85,6 +92,7 @@ DEPENDENCIES
   nodejs-support (>= 0)
   python (>= 0)
   rbenv (>= 0)
+  redis (>= 0)
   ruby_build (>= 0)
   statsd (>= 0)
 
