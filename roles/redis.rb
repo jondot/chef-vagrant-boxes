@@ -1,10 +1,10 @@
 
-name "appserver"
-description "Base appserver"
+name "redis"
+description "Dedicated redis server"
 run_list "recipe[apt]",
-		 "recipe[git]",
-		 "recipe[redis::source]"
-		 
+         "recipe[git]",
+         "recipe[redis::source]"
+
 
 require 'yaml'
 override_attributes YAML.load <<EOF
