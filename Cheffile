@@ -25,6 +25,10 @@ cookbook 'graphite', :git => 'https://github.com/jondot/graphite'
 cookbook 'statsd', :git => 'https://github.com/hectcastro/chef-statsd'
 
 
+# redis stack
+cookbook 'redis', :git => 'https://github.com/ctrabold/chef-redis'
+
+
 
 # cookbook 'chef-client'
 # cookbook 'apache2', '>= 1.0.0'
