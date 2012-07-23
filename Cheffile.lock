@@ -2,7 +2,6 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     apache2 (1.1.12)
-    apt (1.4.4)
     bluepill (1.0.6)
     build-essential (1.1.0)
     dmg (1.0.0)
@@ -31,6 +30,14 @@ GIT
   sha: 9d666da8c00d9d25a5f2b099d1b8137964151111
   specs:
     redis (0.0.3)
+
+GIT
+  remote: https://github.com/edelight/chef-mongodb
+  ref: master
+  sha: 94667ea58779d795aa994c55b8857bfa7c6c05a9
+  specs:
+    mongodb (0.11.0)
+      apt (>= 0.0.0)
 
 GIT
   remote: https://github.com/fnichol/chef-rbenv
@@ -81,12 +88,20 @@ GIT
     nodejs (1.0.0)
       build-essential (>= 0.0.0)
 
+GIT
+  remote: https://github.com/opscode-cookbooks/apt
+  ref: 72295f9354f0a0a791f198f4158d1f428af6e29d
+  sha: 72295f9354f0a0a791f198f4158d1f428af6e29d
+  specs:
+    apt (1.4.0)
+
 DEPENDENCIES
   apt (>= 0)
   git (>= 0)
   graphite (>= 0)
   imagemagick (>= 0)
   java (>= 0)
+  mongodb (>= 0)
   nginx (>= 0)
   nodejs (>= 0)
   nodejs-support (>= 0)
