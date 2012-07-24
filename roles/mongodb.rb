@@ -1,6 +1,6 @@
 
-name "appserver"
-description "Base appserver"
+name "mongodb"
+description "Standalone mongodb + redis server"
 run_list "recipe[apt]",
 		 "recipe[git]",
 		 "recipe[redis::source]",
