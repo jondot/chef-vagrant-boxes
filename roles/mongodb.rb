@@ -1,4 +1,3 @@
-
 name "mongodb"
 description "Standalone mongodb + redis server"
 run_list "recipe[apt]",
@@ -14,6 +13,7 @@ override_attributes YAML.load <<EOF
 redis:
   source:
     version: 2.4.15
+  bind: 0.0.0.0
 
 EOF
 
