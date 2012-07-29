@@ -1,4 +1,3 @@
-
 name "appserver"
 description "Base appserver"
 run_list "recipe[apt]",
@@ -19,7 +18,8 @@ override_attributes({
 			{'name'=> 'bundler', 'version'=>'1.1.4'}
 		],
 		"jruby-1.6.7.2" => [
-			{'name'=>'bundler', 'version'=>'1.1.4'}
+			{'name'=>'bundler', 'version'=>'1.1.4'},
+			{'name'=>'jruby-openssl', 'version'=>'0.7.7'}
 		]
 	}
   },
