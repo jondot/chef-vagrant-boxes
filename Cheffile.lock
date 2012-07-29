@@ -19,17 +19,10 @@ SITE
       runit (>= 0.0.0)
       yum (>= 0.0.0)
     ohai (1.0.2)
-    runit (0.15.0)
-    yum (0.6.2)
-
-GIT
-  remote: git://github.com/lastobelus/python.git
-  ref: master
-  sha: 44868073eb4eaae9d5e6fd99a47b33c085e038fa
-  specs:
     python (1.0.6)
       build-essential (>= 0.0.0)
-      yum (>= 0.0.0)
+    runit (0.15.0)
+    yum (0.6.2)
 
 GIT
   remote: https://github.com/ctrabold/chef-redis
