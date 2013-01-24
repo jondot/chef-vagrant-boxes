@@ -33,6 +33,10 @@ cookbook 'redis', :git => 'https://github.com/ctrabold/chef-redis'
 # mongodb stack
 cookbook 'mongodb', :git => 'https://github.com/edelight/chef-mongodb'
 
+# graylog
+# on some cases JAVA_HOME was not set..
+cookbook 'graylog2', :git => 'https://github.com/Graylog2/chef-repo', :path  => 'graylog2'
+
 
 # cookbook 'chef-client'
 # cookbook 'apache2', '>= 1.0.0'
