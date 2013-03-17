@@ -12,13 +12,13 @@ run_list "recipe[apt]",
 		 
 override_attributes({
   'rbenv' => {
-	'rubies' => [ "1.9.3-p194", "jruby-1.6.7.2" ],
+	'rubies' => [ "1.9.3-p392", "jruby-1.6.7.2" ],
 	'gems'   => {
-		"1.9.3-p194" => [
-			{'name'=> 'bundler', 'version'=>'1.1.4'}
+		"1.9.3-p392" => [
+			{'name'=> 'bundler', 'version'=>'1.2.3'}
 		],
 		"jruby-1.6.7.2" => [
-			{'name'=>'bundler', 'version'=>'1.1.4'},
+			{'name'=>'bundler', 'version'=>'1.2.3'},
 			{'name'=>'jruby-openssl', 'version'=>'0.7.7'}
 		]
 	}
