@@ -11,6 +11,7 @@ cookbook 'git'
 puts "NOTE: python cookbook has a recent bug. see\n   https://github.com/opscode-cookbooks/python/pull/16/files\nand fix locally if python craps out.\n Edit locally and then upload the cookbook"
 cookbook 'python' 
 cookbook 'imagemagick'
+cookbook 'graphicsmagick', :git => 'https://github.com/jondot/graphicsmagick_cookbook'
 
 # ruby stack
 cookbook 'java'

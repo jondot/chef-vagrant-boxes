@@ -84,6 +84,13 @@ GIT
       nodejs (>= 0.0.0)
 
 GIT
+  remote: https://github.com/jondot/graphicsmagick_cookbook
+  ref: master
+  sha: c95ce08c564cdde32f29ecfbcc5d5753fc01490f
+  specs:
+    graphicsmagick (0.1.0)
+
+GIT
   remote: https://github.com/jondot/graphite
   ref: master
   sha: 0791f1a992c34b95ae33eacbdd0a1919f5c2a86c
@@ -110,6 +117,7 @@ GIT
 DEPENDENCIES
   apt (>= 0)
   git (>= 0)
+  graphicsmagick (>= 0)
   graphite (>= 0)
   graylog2 (>= 0)
   imagemagick (>= 0)
