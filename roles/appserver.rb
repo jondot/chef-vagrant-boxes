@@ -4,6 +4,7 @@ run_list "recipe[apt]",
 		 "recipe[git]",
 		 "recipe[java]",
 		 "recipe[imagemagick]",
+		 "recipe[graphicsmagick]",
 		 "recipe[ruby_build]", 
 		 "recipe[rbenv::system]", 
 		 "recipe[nodejs]",
@@ -26,6 +27,10 @@ override_attributes({
   
   'java' => {
 	'jdk_version' => '7'
+  },
+
+  'nodejs' => {
+    'version' => '0.8.22'
   }
 })
 
