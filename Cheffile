@@ -6,7 +6,7 @@ site 'http://community.opscode.com/api/v1'
 # downgrading! see this http://tickets.opscode.com/browse/COOK-1385
 cookbook 'apt', :git => 'https://github.com/opscode-cookbooks/apt', :ref=>'72295f9354f0a0a791f198f4158d1f428af6e29d'
 cookbook 'git'
-cookbook 'tmpreaper', :git => 'https://github.com/customink-webops/tmpreaper'
+cookbook 'tmpreaper', :git => 'https://github.com/jondot/tmpreaper'
 
 
 puts "NOTE: python cookbook has a recent bug. see\n   https://github.com/opscode-cookbooks/python/pull/16/files\nand fix locally if python craps out.\n Edit locally and then upload the cookbook"

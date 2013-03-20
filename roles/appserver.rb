@@ -2,7 +2,7 @@ name "appserver"
 description "Base appserver"
 run_list "recipe[apt]",
 		 "recipe[git]",
-     "recipe[tmpreaper]",
+     "recipe[tmpreaper]", # for scheduling, default apt package should set cron.daily/tmpreaper
 		 "recipe[java]",
 		 "recipe[imagemagick]",
 		 "recipe[graphicsmagick]",
@@ -38,7 +38,8 @@ override_attributes({
     'cron'  => {
       'hour' => 11,
       'minute' => 0
-    }
+    },
+    'tmptime' => '1d'
   }
 
 })
