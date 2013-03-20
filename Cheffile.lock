@@ -26,7 +26,6 @@ SITE
       yum (>= 0.0.0)
     runit (1.1.0)
       build-essential (>= 0.0.0)
-    tmpreaper (0.1.2)
     windows (1.8.4)
       chef_handler (>= 0.0.0)
     yum (2.1.0)
@@ -48,6 +47,13 @@ GIT
   sha: e3a89f34d0f5b81867ae9e07a9404ac89e1ff61c
   specs:
     redis (0.0.4)
+
+GIT
+  remote: https://github.com/customink-webops/tmpreaper
+  ref: master
+  sha: 1a4e6cdcae0bf89cd9cafaf0f9d9be1cac9b8c31
+  specs:
+    tmpreaper (0.1.2)
 
 GIT
   remote: https://github.com/edelight/chef-mongodb
