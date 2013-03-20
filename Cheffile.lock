@@ -26,6 +26,7 @@ SITE
       yum (>= 0.0.0)
     runit (1.1.0)
       build-essential (>= 0.0.0)
+    tmpreaper (0.1.2)
     windows (1.8.4)
       chef_handler (>= 0.0.0)
     yum (2.1.0)
@@ -138,4 +139,5 @@ DEPENDENCIES
   redis (>= 0)
   ruby_build (>= 0)
   statsd (>= 0)
+  tmpreaper (>= 0)
 

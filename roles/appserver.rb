@@ -2,6 +2,7 @@ name "appserver"
 description "Base appserver"
 run_list "recipe[apt]",
 		 "recipe[git]",
+     "recipe[tmpreaper]",
 		 "recipe[java]",
 		 "recipe[imagemagick]",
 		 "recipe[graphicsmagick]",
@@ -31,6 +32,14 @@ override_attributes({
 
   'nodejs' => {
     'version' => '0.8.22'
+  },
+
+  'tmpreaper' => {
+    'cron'  => {
+      'hour' => 11,
+      'minute' => 0
+    }
   }
+
 })
 
