@@ -25,8 +25,9 @@ cookbook 'nodejs-support', :git => 'https://github.com/jondot/chef-nodejs-suppor
 cookbook 'nginx'
 
 # statsd stack
-cookbook 'graphite', :git => 'https://github.com/jondot/graphite'
+cookbook 'graphite', :git => 'https://github.com/hectcastro/chef-graphite.git'
 cookbook 'statsd', :git => 'https://github.com/hectcastro/chef-statsd'
+cookbook 'memcached', :git => 'https://github.com/hectcastro/chef-memcached'
 
 
 # redis stack

@@ -72,6 +72,25 @@ GIT
     ruby_build (0.7.2)
 
 GIT
+  remote: https://github.com/hectcastro/chef-graphite.git
+  ref: master
+  sha: 6398c74cd33d8861f24f642316f09dbdaf43cc32
+  specs:
+    graphite (0.0.15)
+      apache2 (>= 0.0.0)
+      graphite (>= 0.0.0)
+      logrotate (>= 0.0.0)
+      python (>= 0.0.0)
+
+GIT
+  remote: https://github.com/hectcastro/chef-memcached
+  ref: master
+  sha: 66c99cf1536785ccadef25c350ad936786809de6
+  specs:
+    memcached (0.2.0)
+      logrotate (>= 0.0.0)
+
+GIT
   remote: https://github.com/hectcastro/chef-statsd
   ref: master
   sha: 0349f8f6c69fb8977ce1cd6065df9bc3d0d152e3
@@ -95,15 +114,6 @@ GIT
   sha: c95ce08c564cdde32f29ecfbcc5d5753fc01490f
   specs:
     graphicsmagick (0.1.0)
-
-GIT
-  remote: https://github.com/jondot/graphite
-  ref: master
-  sha: 0791f1a992c34b95ae33eacbdd0a1919f5c2a86c
-  specs:
-    graphite (0.3.3)
-      apache2 (>= 0.0.0)
-      python (>= 0.0.0)
 
 GIT
   remote: https://github.com/jondot/tmpreaper
@@ -136,6 +146,7 @@ DEPENDENCIES
   graylog2 (>= 0)
   imagemagick (>= 0)
   java (>= 0)
+  memcached (>= 0)
   mongodb (>= 0)
   nginx (>= 0)
   nodejs (>= 0)
