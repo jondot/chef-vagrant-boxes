@@ -7,6 +7,7 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'apt', :git => 'https://github.com/opscode-cookbooks/apt', :ref=>'72295f9354f0a0a791f198f4158d1f428af6e29d'
 cookbook 'git'
 cookbook 'tmpreaper', :git => 'https://github.com/jondot/tmpreaper'
+cookbook 'collectd', :git => 'https://github.com/hectcastro/chef-collectd'
 
 
 puts "NOTE: python cookbook has a recent bug. see\n   https://github.com/opscode-cookbooks/python/pull/16/files\nand fix locally if python craps out.\n Edit locally and then upload the cookbook"
@@ -25,7 +26,7 @@ cookbook 'nodejs-support', :git => 'https://github.com/jondot/chef-nodejs-suppor
 cookbook 'nginx'
 
 # statsd stack
-cookbook 'graphite', :git => 'https://github.com/hectcastro/chef-graphite.git'
+cookbook 'graphite', :git => 'https://github.com/jondot/chef-graphite.git'
 cookbook 'statsd', :git => 'https://github.com/hectcastro/chef-statsd'
 cookbook 'memcached', :git => 'https://github.com/hectcastro/chef-memcached'
 
